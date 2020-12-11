@@ -7,8 +7,9 @@
 header {
 	height:70px;
 	width: 100%;
-	background-color: white;
-	position: fixed;
+	background-color: rgb(154, 188, 211);
+    position: fixed;
+    z-index: 3;
 }
 header h1 {
 	display: inline-block;
@@ -21,7 +22,7 @@ header h1 a {
 	transition: 0.3s;
 }
 header h1 a:hover {
-	color:#FF5733;
+	color:yellow;
 }
 header ul {
 	float: right;
@@ -34,7 +35,7 @@ header ul li a {
 	transition: 0.3s;
 }
 header ul li a:hover {
-	color:#FF5733;
+	color:yellow;
 }
 a {
 	text-decoration: none;
@@ -75,7 +76,6 @@ a {
 .sidebar ul li {
 	padding: 24px;
 	transition: 0.3s;
-	transition-property:background-color;
 }
 .sidebar ul li:hover {
 	background-color:#FB783C;
@@ -85,7 +85,7 @@ a {
 }
 .banner {
 	background-color:#3CAFFB;
-    padding:100px 0 30px 0;
+	padding:100px 0 30px 0;
 }
 .banner img {
     width: 100%;
@@ -151,6 +151,37 @@ section h3::after {
 .Cpp {
 	width:40%;
 }
+#contact {
+	background-color: #3CAFFB;
+	opacity: 80%;
+	padding-bottom: 10px;
+}
+.col-5 {
+	width: 33.33%;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	padding: 50px 10px;
+}
+.col-5 p,
+p a {
+	color: white;
+}
+.col-5 h4 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgb(248, 0, 0);
+	margin-bottom: 15px;
+}
+.col-5 a:hover {
+	color:yellow;
+}
+marquee {
+	color:rgb(178, 179, 157);
+	background-color: black;
+	font-size: 18px;
+	font-family: 'Playball', cursive;
+	padding: 5px;
+}
 footer {
 	background-color: #333;
 	padding: 50px;
@@ -170,5 +201,8 @@ footer small {
 	}
 	header ul {
 		display: none;
-    }
+	}
+	.col-5{
+		width: 100%;
+	}
 }
