@@ -65,7 +65,7 @@ a {
 	top: 0;
 	bottom: 0;
 	left: -300px;
-	width: 300px;
+	width: 250px;
 	background-color: rgba(60, 199, 251, 0.9);
 	transition: 0.3s;
 	z-index: 9999;
@@ -92,7 +92,7 @@ a {
     border-radius: 10px;
     box-shadow: 0 3px 5px #ddd;
 }
-#about {
+#info {
     opacity: 80%;
 }
 section {
@@ -127,7 +127,7 @@ section h3::after {
 	background-color:cyan;
 	left: calc(50% - 20px);
 }
-#about p {
+#info p {
     color: white;
 	text-align: justify;
 	text-indent: 30px;
@@ -136,20 +136,11 @@ section h3::after {
     margin-bottom: 0px;
     font-size: 18px;
 }
-#about img {
+#info img {
     width: 300px;
     height: 500px;
     margin: auto;
     display: block;
-}
-.html {
-	width:80%;
-}
-.python {
-	width:95%;
-}
-.Cpp {
-	width:40%;
 }
 #contact {
 	background-color: #3CAFFB;
