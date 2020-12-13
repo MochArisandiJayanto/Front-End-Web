@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/HMIF_LOGO.png">
-    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/signin.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>Login</title>
@@ -15,7 +15,7 @@
 	<div class="sidebar">
 		<ul>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="#">Sign in</a></li>
+			<li><a href="login.html">Login</a></li>
 		</ul>
     </div>
         
@@ -25,7 +25,7 @@
 			<h1><a href="index.html">COMPILER</a></h1>
 			<ul>
                 <li><a href="index.html">Home</a></li>
-				<li><a href="#">Sign in</a></li>
+				<li><a href="login.html">Login</a></li>
 			</ul>
 				
 			<!--Menu Mobile-->
@@ -37,11 +37,29 @@
 
     <!--Banner-->
 	<section id="bann" class="banner">
-        <h6>LOGIN</h6>
+        <h6>SIGN IN</h6>
 		<div class="container">
 			<div class="tabel">
-                <table style="background-image: url(img/bg2.jpg);">
+                <table style="background-image: url(img/bg2.jpg); background-size: cover;">
                     <form name="biodata" action="#" method="POST">
+                        <tr>
+                            <td>Nama :</td>
+                            <td>
+                                <input class="col" type="text" name="Nama" placeholder="Nama" required>
+                            </td></br>
+                        </tr>
+                        <tr>
+                            <td>Nim :</td>
+                            <td>
+                                <input class="col" type="number" name="Nim" placeholder="Nim" required>
+                            </td></br>
+                        </tr>
+                        <tr>
+                            <td>E-mail :</td>
+                            <td>
+                                <input class="col" type="email" name="E-mail" placeholder="E-mail" required>
+                            </td></br>
+                        </tr>
                         <tr>
                             <td>Username :</td>
                             <td>
@@ -60,8 +78,7 @@
         </div>
     </br>
         <div>
-            <a href="#"><input class="Login" type="button" value="Login"></a><br>
-            <a href="signin.html"><input class="Signin" type="button" value="Sign in"></a>
+            <a href="login.html"><input class="Signin" type="button" value="Sign in"></a>
         </div>
     </section>
    

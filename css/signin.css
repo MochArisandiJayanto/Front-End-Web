@@ -9,6 +9,7 @@ header {
 	width: 100%;
 	background-color: rgb(154, 188, 211);
     position: fixed;
+    z-index: 3;
 }
 header h1 {
 	display: inline-block;
@@ -92,7 +93,7 @@ a {
     margin: 20px;
 }
 .tabel table {
-    margin-top: 60px;
+    margin-top: 20px;
 }
 .banner table {
     width: 100%;
@@ -116,20 +117,9 @@ a {
 .col {
     width: 30%;
     opacity: 80%; 
-    border-radius: 10px; 
-    text-align: center; 
+    border-radius: 10px;
+    text-align: center;
     height: 30px;
-}
-.Login {
-    width: 200px;
-    height: 50px;
-    border-radius: 30px;
-    margin: auto;
-    display: block;
-    margin-bottom: 20px;
-}
-.Login:hover{
-    background-color: cyan;
 }
 .Signin {
     width: 200px;
@@ -137,11 +127,12 @@ a {
     border-radius: 30px;
     margin: auto;
     display: block;
-    margin-bottom: 90px;
+    margin-top: 20px;
+    margin-bottom: 70px;
 }
 .Signin:hover{
     background-color: cyan;
-}
+} 
 footer {
 	background-color: #333;
 	padding: 50px;
