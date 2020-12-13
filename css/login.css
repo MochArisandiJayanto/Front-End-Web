@@ -1,0 +1,154 @@
+* {
+	padding:0;
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+header {
+	height:70px;
+	width: 100%;
+	background-color: rgb(154, 188, 211);
+    position: fixed;
+}
+header h1 {
+	display: inline-block;
+	padding:13px 23px;
+	float: left;
+	text-transform: uppercase;
+}
+header h1 a {
+	font-size: 70%;
+	transition: 0.3s;
+}
+header h1 a:hover {
+	color:yellow;
+}
+header ul {
+	float: right;
+}
+header ul li {
+	padding:24px;
+	display: inline-block;
+}
+header ul li a {
+	transition: 0.3s;
+}
+header ul li a:hover {
+	color:yellow;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	width:90%;
+	margin:0 auto;
+}
+.container::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.menu-mobile {
+	float: right;
+	display: none;
+	padding:18px;
+}
+.menu-mobile:hover{
+	cursor: pointer;
+}
+#check {
+	display: none;
+}
+.sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: -300px;
+	width: 250px;
+	background-color: rgba(60, 199, 251, 0.9);
+	transition: 0.3s;
+	z-index: 9999;
+}
+.sidebar ul li a {
+	color: white;
+}
+.sidebar ul li {
+	padding: 24px;
+	transition: 0.3s;
+}
+.sidebar ul li:hover {
+	background-color:#FB783C;
+}
+#check:checked ~ .sidebar {
+	left:0;
+}
+.banner {
+    background-image: url(../img/bg3.jpg);
+    background-size: cover;
+    padding:100px 0 30px 0;
+}
+.tabel {
+    text-align: center;
+    margin: 20px;
+}
+.tabel table {
+    margin-top: 60px;
+}
+.banner table {
+    width: 100%;
+    border-radius: 40px;
+    box-shadow: 0 3px 5px #ddd;
+}
+.banner table tr td{
+    margin: 20px;
+    color: white;
+    font-weight: bold
+    margin: auto;
+    display: block;
+}
+.banner h6 {
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+.Login {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+.Signin {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    margin: auto;
+    display: block;
+    margin-bottom: 90px;
+} 
+footer {
+	background-color: #333;
+	padding: 50px;
+	text-align: center;
+}
+footer small {
+	color: #fff;
+}
+
+@media (max-width: 768px){
+	.sidebar {
+		-webkit-transform: none !important;
+		transform: none !important;
+	}
+	.menu-mobile {
+		display: block;
+	}
+	header ul {
+		display: none;
+    }
+    .banner{
+        display: block;
+    }
+}
